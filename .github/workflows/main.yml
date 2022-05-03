@@ -27,5 +27,6 @@ jobs:
         run: |
           cd ./goMod
           go build .
+          ./gotest.exe
 
 
