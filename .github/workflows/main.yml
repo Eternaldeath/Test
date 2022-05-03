@@ -33,6 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project,
-          node -v,
-          go -v
+          echo test, and deploy your project.
