@@ -26,8 +26,6 @@ jobs:
       - name: build
         run: |
           cd ./goMod
-          go build .
-          chmod 777 gotest.exe
-          ./gotest.exe
+          go run .
 
 
