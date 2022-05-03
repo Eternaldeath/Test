@@ -1,0 +1,7 @@
+name: mytest
+on:
+jobs:
+ job1:
+  runs-on: ubuntu-latest
+  steps:
+  - run: node -v
