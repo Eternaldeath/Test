@@ -27,6 +27,6 @@ jobs:
         run: |
           cd ./goMod
           ls
-          go run .
+          go run ./main.go
 
 
