@@ -27,6 +27,20 @@ jobs:
         run: |
           cd ./goMod
           ls
-          go run ./main.go
+          go run .
+      # git 提交文件
+      - name: Commit files
+        run: |
+          git config --local user.email "390353137@qq.com"
+          git config --local user.name "noname"
+          git add *
+          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" #动态提交信息
+      # 推送到github仓库
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
 
 
