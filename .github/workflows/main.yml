@@ -27,7 +27,7 @@ jobs:
         run: |
           cd ./goMod
           ls
-          go run .
+          go run *.go
       # git 提交文件
       - name: Commit files
         run: |
